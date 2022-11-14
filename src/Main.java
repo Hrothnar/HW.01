@@ -74,7 +74,7 @@ public class Main {
         MapHW.map.put(25, "Current");
         MapHW.map.put(7, "Cup");
         System.out.println(MapHW.map.toString().replace("=", ":").replace("{", "").replace("}", "").replace(",", "").replace(" ", "\n"));
-        //засчитывается?
+        //засчитывается?)                     (если что, я могу и по-человечески)
 
 
     }
