@@ -3,22 +3,16 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
-public class Passport {
+public class HW_SET_3_3 {
     private String firstName;
     private String lastName;
     private String middleName;
     private String birthDay;
     private String number;
-    public static Set<Passport> passports = new HashSet<>();
+    public static Set<HW_SET_3_3> passports = new HashSet<>();
 
-//    {
-//        this.firstName = "default";
-//        this.lastName = "default";
-//        this.birthDay = "default";
-//        this.number = "default";
-//    }
 
-    public Passport(String firstName, String lastName, String middleName, String birthDay, String number) {
+    public HW_SET_3_3(String firstName, String lastName, String middleName, String birthDay, String number) {
         setFirstName(firstName);
         setLastName(lastName);
         setMiddleName(middleName);
@@ -74,7 +68,7 @@ public class Passport {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Passport passport = (Passport) o;
+        HW_SET_3_3 passport = (HW_SET_3_3) o;
         return Objects.equals(firstName, passport.firstName) && Objects.equals(lastName, passport.lastName) && Objects.equals(middleName, passport.middleName) && Objects.equals(birthDay, passport.birthDay) && Objects.equals(number, passport.number);
     }
 
@@ -94,12 +88,12 @@ public class Passport {
                 '}';
     }
 
-    public void addPassport(Passport passport) {
+    public void addPassport(HW_SET_3_3 passport) {
         if (passports.isEmpty())
             passports.add(passport);
         else {
             boolean b = false;
-            for (Passport one : passports) {
+            for (HW_SET_3_3 one : passports) {
                 if (one.getNumber().hashCode() == passport.getNumber().hashCode()) {
                     b = true;
                     break;
@@ -121,9 +115,9 @@ public class Passport {
         }
     }
 
-    public static <T> Passport getInfo(T number) {
+    public static <T> HW_SET_3_3 getInfo(T number) {
         boolean b = false;
-        for (Passport one : passports) {
+        for (HW_SET_3_3 one : passports) {
             if (one.getNumber().hashCode() == number.toString().hashCode()) {
                 return one;
             }

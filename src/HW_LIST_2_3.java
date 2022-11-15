@@ -1,23 +1,16 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class ChessTable {
+public class HW_LIST_2_3 {
 
-    static void matrix() {
+    public static void showMatrix() {
         List<List<String>> matrix = new ArrayList<>();
         for (int i = 0; i < 8; i++) {
             matrix.add(i, new ArrayList<>());
             for (int j = 0; j < 8; j++) {
-                if (i % 2 == 0) {
-                    if (j % 2 == 0)
-                        matrix.get(i).add(j, "◯");
-                    else
-                        matrix.get(i).add(j, "●");
-                } else {
-                    if (j % 2 != 0)
-                        matrix.get(i).add(j, "◯");
-                    else
-                        matrix.get(i).add(j, "●"); // можно сократить, изначально заполнив массив одним типом полей
+                matrix.get(i).add(j, "◯");
+                if (i % 2 == 0 && j % 2 != 0 || i % 2 != 0 && j % 2 == 0) {
+                    matrix.get(i).add(j, "●");
                 }
             }
         }

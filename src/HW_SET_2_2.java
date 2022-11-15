@@ -3,7 +3,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-public class SetHW {
+public class HW_SET_2_2 {
     public static void randomSet() {
         Set<Integer> list = new HashSet<>();
         for (int i = 0; list.size() < 20; i++) {
