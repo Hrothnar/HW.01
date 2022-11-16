@@ -1,43 +1,33 @@
+import HW2_9.RandomMap;
+import HW2_9.ReworkedMap;
+
 import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
 
-        // ============================================================================= //
-        //HW_LIST_2_3
+//        ChessField.showField();
+//
 
-        HW_LIST_2_3.showMatrix();
+//        EvenSet.showEvenSet();
+//
 
-        // ============================================================================= //
-        //HW_SET_2_2
+//        MultiplicationTable.showTable();
 
-        HW_SET_2_2.randomSet();
-
-        // ============================================================================= //
-        //HW_SET_3_2
-
-        HW_SET_3_2_First.table();
-
-        // ============================================================================= //
-        //HW_SET_3_3
 
 //        Passport igor = new Passport("Игорь", "Валиев", null, "13.04.1995", "21444252");
 //        Passport vasya = new Passport("Вася", "Петров", "Захарович", "27.06.1992", "54288244");
 //        Passport elena = new Passport("Елена", "Котлова", "Владимировна", "06.06.1990", "92376335");
 //        Passport irina = new Passport("Ирина", "Карамазова", "Николаевна", "17.08.1996", "77398872");
 //        Passport irinaNew = new Passport("Ирина", "Карамазова", "Николаевна", "17.08.2002", "77388872");
-//
 //        igor.addPassport(igor);
 //        vasya.addPassport(vasya);
 //        vasya.addPassport(vasya);
 //        elena.addPassport(elena);
 //        irina.addPassport(irina);
 //        irina.addPassport(irinaNew);
-//
 //        System.out.println(Passport.getInfo(77398872));
 
-        // ============================================================================= //
-        // HW_MAP_1.1
 
         HashMap<String, String> phonebook = new HashMap<>();
         phonebook.put("Василий Петров", "+7(913)233-44-76");
@@ -57,41 +47,35 @@ public class Main {
         phonebook.put("Джорж Вашингтон", "+7(237)857-45-68");
         phonebook.put("Брюс Уилес", "+7(245)345-93-34");
         phonebook.put("Александр Македонский", "+7(888)456-56-81");
-        System.out.println(phonebook.values());
+        System.out.println(phonebook);
 
-        // ============================================================================= //
-        // HW_MAP_1.3
 
-        HW_MAP_1_3.addToMap("STR1", 1);
-        HW_MAP_1_3.addToMap("STR1", 3);
-        HW_MAP_1_3.addToMap("STR1", 1);
-        HW_MAP_1_3.addToMap("STR2", 5);
-        HW_MAP_1_3.addToMap("STR2", 6);
-        HW_MAP_1_3.addToMap("STR3", 2);
-        HW_MAP_1_3.addToMap("STR3", 4);
-        HW_MAP_1_3.addToMap("STR2", 6);
+        RandomMap.addToMap("STR1", 1);
+        RandomMap.addToMap("STR1", 3);
+        RandomMap.addToMap("STR1", 1);
+        RandomMap.addToMap("STR2", 5);
+        RandomMap.addToMap("STR2", 6);
+        RandomMap.addToMap("STR3", 2);
+        RandomMap.addToMap("STR3", 4);
+        RandomMap.addToMap("STR2", 6);
 
-        // ============================================================================= //
-        // HW_MAP_2.1
 
-        HW_MAP_2_1.showChangedMap();
+        ReworkedMap.showChangedMap();
 
-        // ============================================================================= //
-        // HW_MAP_2.2
 
-        Map<Integer, String> map = new LinkedHashMap<>();
-        map.put(12, "True");
-        map.put(523, "Covered");
-        map.put(17, "Autumn");
-        map.put(384, "Time");
-        map.put(726, "Legacy");
-        map.put(331, "Destiny");
-        map.put(58, "Ahead");
-        map.put(264, "Other");
-        map.put(25, "Current");
-        map.put(7, "Cup");
-        System.out.println(map.toString().replace("=", ":").replace("{", "").replace("}", "").replace(",", "").replace(" ", "\n"));
-        //засчитывается?)                     (если что, я могу и по-человечески)
+        Map<Integer, String> trainingMap = new LinkedHashMap<>();
+        trainingMap.put(12, "True");
+        trainingMap.put(523, "Covered");
+        trainingMap.put(17, "Autumn");
+        trainingMap.put(384, "Time");
+        trainingMap.put(726, "Legacy");
+        trainingMap.put(331, "Destiny");
+        trainingMap.put(58, "Ahead");
+        trainingMap.put(264, "Other");
+        trainingMap.put(25, "Current");
+        trainingMap.put(7, "Cup");
+        System.out.println(trainingMap.toString().replace("=", ":").replace("{", "").replace("}", "").replace(",", "").replace(" ", "\n"));
+
 
 
     }

@@ -1,8 +1,10 @@
-public class HW_SET_3_2_Second {
+package HW2_8;
+
+public class NumbersForMultiplicationTable {
     private int num1;
     private int num2;
 
-    public HW_SET_3_2_Second(int num1, int num2) {
+    public NumbersForMultiplicationTable(int num1, int num2) {
         this.num1 = num1;
         this.num2 = num2;
     }
@@ -11,7 +13,7 @@ public class HW_SET_3_2_Second {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        HW_SET_3_2_Second that = (HW_SET_3_2_Second) o;
+        NumbersForMultiplicationTable that = (NumbersForMultiplicationTable) o;
         return (num1 == that.num1 && num2 == that.num2) || (num1 == that.num2 && num2 == that.num1);
     }
 

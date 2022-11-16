@@ -1,10 +1,12 @@
+package HW2_8;
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-public class HW_SET_2_2 {
-    public static void randomSet() {
+public class EvenSet {
+    public static void showEvenSet() {
         Set<Integer> list = new HashSet<>();
         for (int i = 0; list.size() < 20; i++) {
             int num = (int) (Math.random() * 1000);
